@@ -11,8 +11,7 @@ const Followers = props =>  {
                 {props.followers.map(e=>(
                     <Card>
                         <img width="300" src = {e.avatar_url}/>
-                        <h3>Username - {e.login}</h3>
-                        <h5> Link - {e.html_url}</h5>
+                        <h3>{e.login}</h3>
                     </Card>
                 ))}
             </List>
